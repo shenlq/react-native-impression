@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-import Button from './src/scripts/components/Button'
+import { Button } from './src/scripts/index'
 
 class robot extends Component {
   render() {

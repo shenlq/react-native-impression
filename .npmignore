@@ -1,0 +1,11 @@
+/android
+/ios
+/node_modules
+.buckconfig
+.editorconfig
+.eslintrc.js
+.flowconfig
+.gitignore
+.watchmanconfig
+index.android.js
+index.ios.js
