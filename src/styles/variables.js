@@ -53,10 +53,6 @@ export const button = {
     bgDefaultActive: darken(grayFloor, 6),
     borderDefaultOutline: grayLighten,
 
-    colorDisabled: grayLight,
-    bgDisabled: '#dadada',
-    borderDisabled: '#dadada',
-
     fontSize: fontSize,
     fontSizeSm: fontSizeSm,
     fontSizeLg: fontSizeLg,

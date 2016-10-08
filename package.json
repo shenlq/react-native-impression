@@ -1,12 +1,11 @@
 {
-  "name": "robot",
-  "version": "0.0.1",
-  "private": true,
-  "main": "./src/scripts/components/index.js",
+  "name": "impression-react-native",
+  "version": "0.0.2",
+  "main": "./src/scripts/index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "15.3.2",
     "react-native": "0.34.1"
   }

@@ -7,12 +7,11 @@ import shadow from '../utils/shadow';
 const btn = {
     paddingVertical: button.paddingVertical,
     paddingHorizontal: button.paddingHorizontal,
-    borderWidth: getPixel() * 1.5,
+    borderWidth: getPixel() * 1.2,
     borderColor: 'transparent',
     borderRadius: button.borderRadius,
     backgroundColor: button.bgPrimary,
     ...shadow(),
-    marginBottom: 30,
 };
 
 const btnLg = {
@@ -43,8 +42,7 @@ const btnDefaultOutline = {
 };
 
 const btnDisabled = {
-    borderColor: button.borderDisabled,
-    backgroundColor: button.bgDisabled,
+    opacity: 0.5,
 };
 
 // 文本
@@ -119,12 +117,7 @@ export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = 
         activeButtonBgColor = button.bgDefaultActive;
     }
 
-    if(disabled) {
-        mergeButton.push(btnDisabled);
-        mergeText.push({
-           color: button.colorDisabled,
-        });
-    }
+    disabled && mergeButton.push(btnDisabled);
 
     return {
         button: mergeButton,

@@ -24,11 +24,13 @@ class robot extends Component {
                 123
             </Button>
             <Button
+            disabled
                 size="sm"
                 onPress={() => console.log(1)}>
                 123
             </Button>
             <Button
+            disabled
                 size="lg"
                 theme="secondary"
                 onPress={() => console.log(1)}>
@@ -50,7 +52,6 @@ class robot extends Component {
                 outline
                 size="lg"
                 theme="secondary"
-                disabled
                 onPress={() => console.log(1)}>
                 123
             </Button>
