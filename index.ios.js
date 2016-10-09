@@ -11,7 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import { Button, List } from './src/scripts/index'
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Button, List } from './src/scripts/index';
 
 class robot extends Component {
   render() {
@@ -27,8 +28,8 @@ class robot extends Component {
             <List.Item>
                 <Text style={styles.text}>钱包</Text>
             </List.Item>
-            <List.Item>
-                <Text style={styles.text}>卡包</Text>
+            <List.Item onPress={() => console.log(0)}>
+                <Text>联系我们</Text>
             </List.Item>
         </List>
       </View>

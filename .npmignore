@@ -1,6 +1,8 @@
 /android
 /ios
 /node_modules
+/demo
+/images
 .buckconfig
 .editorconfig
 .eslintrc.js

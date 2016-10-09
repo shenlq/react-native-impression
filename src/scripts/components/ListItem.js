@@ -8,21 +8,16 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { flex } from '../../styles/modules/common';
-import { listItem, listItemContainer, listIcon } from '../../styles/modules/list';
+import { listItem, listItemContainer, listArrow } from '../../styles/modules/list';
 
 // ListItem
 const ListItem = ({ onPress, style, children, ...others }) => {
     let Component = View,
         { backgroundColorActive, ...itemStyle } = listItem;
 
+    console.log(children);
     // clickable
     if(onPress) {
-        let { style } = children.props;
-
-        children = React.cloneElement(children, {
-            style: [flex, style]
-        });
-
         Component = Platform.OS === 'ios' ? TouchableHighlight : TouchableNativeFeedback;
     }
 
@@ -32,10 +27,12 @@ const ListItem = ({ onPress, style, children, ...others }) => {
             onPress={onPress}
             style={[itemStyle, style]}
             underlayColor={backgroundColorActive}>
-            <View style={listItemContainer}>
-                {children}
+            <View style={flex}>
+                <View style={flex}>
+                    {children}
+                </View>
                 { onPress &&
-                    <Icon name="angle-right" size={listIcon.size} color={listIcon.color}/>
+                    <Icon name="angle-right" size={listArrow.size} color={listArrow.color}/>
                 }
             </View>
         </Component>

@@ -19,12 +19,7 @@ export const listItem = {
     backgroundColorActive: style.backgroundColorActive,
 };
 
-export const listItemContainer = {
-    flexDirection: 'row',
-    alignItems: 'center'
-}
-
-export const listIcon = {
+export const listArrow = {
     size: 14,
     color: style.borderColor
 }
