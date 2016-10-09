@@ -25,7 +25,7 @@ export const borderRadiusLg = 8;
 
 // Border
 export const borderWidth = getPixel();
-export const borderColor = grayLight;
+export const borderColor = grayLighten;
 
 // Space
 export const paddingVertical = 10;
@@ -86,11 +86,20 @@ export const button = {
 // List
 export const list = {
     borderWidth,
-    borderColor: grayLighten,
+    borderColor,
     marginBottom: paddingVerticalLg,
     paddingVertical: 14,
     paddingHorizontal,
     backgroundColor: grayFloor,
     backgroundColorActive: '#ebebeb',
+};
+
+// Media
+export const media = {
+    backgroundColor: grayFloor,
+    paddingVertical,
+    paddingHorizontal,
+    headerFontSize: fontSize,
+    headerFontWeight: 'bold',
 };
 

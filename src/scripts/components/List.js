@@ -4,9 +4,9 @@ import { list } from '../../styles/modules/list';
 import ListItem from './ListItem';
 
 
-const List = ({ style, children }) => {
+const List = ({ style, children, ...others }) => {
     return (
-        <View style={[list, style]}>
+        <View {...others} style={[list, style]}>
             {children}
         </View>
     );

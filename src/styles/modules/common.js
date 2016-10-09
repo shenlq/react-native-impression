@@ -1,11 +1,15 @@
+import * as variables from '../variables';
 
-export const flex = {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+// 带边框
+export const bordered = {
+    borderWidth: variables.borderWidth,
+    borderColor: variables.borderColor,
 };
 
-export const flexItem = {
-    flex: 1,
-};
 
+// 垂直边框
+export const borderVerticaled = {
+    borderTopWidth: variables.borderWidth,
+    borderBottomWidth: variables.borderWidth,
+    borderColor: variables.borderColor,
+};
