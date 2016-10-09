@@ -1,44 +1,44 @@
-import { button }  from '../variables';
+import { button as style }  from '../variables';
 import { darken } from '../utils/color';
 import { getPixel } from '../utils/pixel';
 import shadow from '../utils/shadow';
 
 // 按钮
 const btn = {
-    paddingVertical: button.paddingVertical,
-    paddingHorizontal: button.paddingHorizontal,
-    borderWidth: getPixel() * 1.2,
+    paddingVertical: style.paddingVertical,
+    paddingHorizontal: style.paddingHorizontal,
+    borderWidth: style.borderWidth,
     borderColor: 'transparent',
-    borderRadius: button.borderRadius,
-    backgroundColor: button.bgPrimary,
+    borderRadius: style.borderRadius,
+    backgroundColor: style.bgPrimary,
     ...shadow(),
 };
 
 const btnLg = {
-    paddingVertical: button.paddingVerticalLg,
-    paddingHorizontal: button.paddingHorizontalLg,
-    borderRadius: button.borderRadiusLg,
+    paddingVertical: style.paddingVerticalLg,
+    paddingHorizontal: style.paddingHorizontalLg,
+    borderRadius: style.borderRadiusLg,
 };
 
 const btnSm = {
-    paddingVertical: button.paddingVerticalSm,
-    paddingHorizontal: button.paddingHorizontalSm,
-    borderRadius: button.borderRadiusSm,
+    paddingVertical: style.paddingVerticalSm,
+    paddingHorizontal: style.paddingHorizontalSm,
+    borderRadius: style.borderRadiusSm,
 }
 
 // outline
 const btnPrimaryOutline = {
-    backgroundColor: button.bgPrimaryOutline,
-    borderColor: button.borderPrimaryOutline,
+    backgroundColor: style.bgPrimaryOutline,
+    borderColor: style.borderPrimaryOutline,
 };
 
 const btnSecondaryOutline = {
-    backgroundColor: button.bgSecondaryOutline,
-    borderColor: button.borderSecondaryOutline,
+    backgroundColor: style.bgSecondaryOutline,
+    borderColor: style.borderSecondaryOutline,
 };
 
 const btnDefaultOutline = {
-    borderColor: button.borderDefaultOutline,
+    borderColor: style.borderDefaultOutline,
 };
 
 const btnDisabled = {
@@ -47,34 +47,34 @@ const btnDisabled = {
 
 // 文本
 const text = {
-    color: button.color,
+    color: style.color,
     textAlign: 'center',
-    fontSize: button.fontSize,
+    fontSize: style.fontSize,
 };
 
 
 export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = false, disabled = false ) => {
     let mergeButton = [btn],
         mergeText = [text],
-        activeButtonBgColor = button.bgPrimaryActive;
+        activeButtonBgColor = style.bgPrimaryActive;
 
     // color
     switch(theme) {
         case 'secondary':
             mergeButton.push({
-                backgroundColor: button.bgSecondary,
+                backgroundColor: style.bgSecondary,
             });
-            activeButtonBgColor = button.bgSecondaryActive;
+            activeButtonBgColor = style.bgSecondaryActive;
             break;
 
         case 'default':
             mergeButton.push({
-                backgroundColor: button.bgDefault,
+                backgroundColor: style.bgDefault,
             });
             mergeText.push({
-                color: button.colorDefault,
+                color: style.colorDefault,
             });
-            activeButtonBgColor = button.bgDefaultActive;
+            activeButtonBgColor = style.bgDefaultActive;
 
             break;
     }
@@ -84,13 +84,13 @@ export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = 
         case 'lg':
             mergeButton.push(btnLg);
             mergeText.push({
-                fontSize: button.fontSizeLg,
+                fontSize: style.fontSizeLg,
             });
             break;
         case 'sm':
             mergeButton.push(btnSm);
             mergeText.push({
-                fontSize: button.fontSizeSm,
+                fontSize: style.fontSizeSm,
             });
             break;
     }
@@ -101,20 +101,20 @@ export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = 
             case 'primary':
                 mergeButton.push(btnPrimaryOutline);
                 mergeText.push({
-                    color: button.colorPrimary,
+                    color: style.colorPrimary,
                 });
                 break;
             case 'secondary':
                 mergeButton.push(btnSecondaryOutline);
                 mergeText.push({
-                    color: button.colorSecondary,
+                    color: style.colorSecondary,
                 });
                 break;
             case 'default':
                 mergeButton.push(btnDefaultOutline);
         }
 
-        activeButtonBgColor = button.bgDefaultActive;
+        activeButtonBgColor = style.bgDefaultActive;
     }
 
     disabled && mergeButton.push(btnDisabled);

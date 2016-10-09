@@ -10,14 +10,8 @@ import { getButtonStyle } from '../../styles/modules/button';
 
 // Button
 const Button = ({ theme, size, outline, disabled=false, style, children, ...others }) => {
-    let Component = TouchableHighlight,
-        { button, activeButtonBg, text } = getButtonStyle(theme, size, outline, disabled);
-
-    if(Platform.OS === 'ios') {
-        Component = TouchableHighlight;
-    }else if(Platform.OS === 'android') {
-        Component = TouchableNativeFeedback;
-    }
+    let { button, activeButtonBg, text } = getButtonStyle(theme, size, outline, disabled),
+        Component = Platform.OS === 'ios' ? TouchableHighlight : TouchableNativeFeedback;
 
     return (
         <Component
@@ -37,6 +31,8 @@ Button.propTypes = {
     size: PropTypes.oneOf(['sm', 'lg', 'default']),
     outline: PropTypes.bool,
     disabled: PropTypes.bool,
+    style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
+    children: PropTypes.any,
 };
 
 export default Button;

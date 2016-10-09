@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -11,25 +5,25 @@ import {
   Text,
   View
 } from 'react-native';
-import { Button, List } from './src/scripts/index'
+import { Button, List, ListItem } from './src/scripts/index'
 
 class robot extends Component {
   render() {
     return (
       <View style={styles.container}>
         <List style={styles.list}>
-            <List.Item>
+            <ListItem>
                 <Text style={styles.text}>相册</Text>
-            </List.Item>
-            <List.Item onPress={() => console.log(0)}>
+            </ListItem>
+            <ListItem onPress={() => console.log(0)}>
                 <Text style={styles.text}>收藏</Text>
-            </List.Item>
-            <List.Item>
+            </ListItem>
+            <ListItem>
                 <Text style={styles.text}>钱包</Text>
-            </List.Item>
-            <List.Item>
+            </ListItem>
+            <ListItem>
                 <Text style={styles.text}>卡包</Text>
-            </List.Item>
+            </ListItem>
         </List>
       </View>
     );
@@ -48,7 +42,3 @@ const styles = StyleSheet.create({
     color: '#333',
   }
 });
-
-console.log(styles);
-
-AppRegistry.registerComponent('robot', () => robot);
