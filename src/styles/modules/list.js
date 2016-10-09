@@ -1,7 +1,4 @@
-import { list as style }  from '../variables';
-import { darken } from '../utils/color';
-import { getPixel } from '../utils/pixel';
-import shadow from '../utils/shadow';
+import { list as style } from '../variables';
 
 export const list = {
     borderTopWidth: style.borderWidth,
@@ -21,5 +18,5 @@ export const listItem = {
 
 export const listArrow = {
     size: 14,
-    color: style.borderColor
-}
+    color: style.borderColor,
+};

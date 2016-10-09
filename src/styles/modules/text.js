@@ -1,8 +1,5 @@
-import { textDefault }  from '../variables';
-import { darken } from '../utils/color';
-import { getPixel } from '../utils/pixel';
-import shadow from '../utils/shadow';
+import { text } from '../variables';
 
 export const textDefault = {
-    color: textDefault,
+    color: text.default,
 };

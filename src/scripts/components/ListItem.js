@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import {
-    Text,
     View,
     Platform,
     TouchableHighlight,
@@ -8,14 +7,13 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { flex } from '../../styles/modules/common';
-import { listItem, listItemContainer, listArrow } from '../../styles/modules/list';
+import { listItem, listArrow } from '../../styles/modules/list';
 
 // ListItem
 const ListItem = ({ onPress, style, children, ...others }) => {
     let Component = View,
         { backgroundColorActive, ...itemStyle } = listItem;
 
-    console.log(children);
     // clickable
     if(onPress) {
         Component = Platform.OS === 'ios' ? TouchableHighlight : TouchableNativeFeedback;
@@ -32,7 +30,7 @@ const ListItem = ({ onPress, style, children, ...others }) => {
                     {children}
                 </View>
                 { onPress &&
-                    <Icon name="angle-right" size={listArrow.size} color={listArrow.color}/>
+                    <Icon name="angle-right" size={listArrow.size} color={listArrow.color} />
                 }
             </View>
         </Component>
@@ -40,6 +38,7 @@ const ListItem = ({ onPress, style, children, ...others }) => {
 };
 
 ListItem.propTypes = {
+    onPress: PropTypes.func,
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     children: PropTypes.node,
 };

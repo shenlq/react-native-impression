@@ -3,14 +3,23 @@
   "version": "0.0.5",
   "main": "./src/scripts/index.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "eslint": "eslint src/scripts"
   },
   "peerDependencies": {
     "react": "15.3.2",
     "react-native": "0.34.1"
   },
   "devDependencies": {
-    "eslint-config-impression": "^1.0.5"
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-config-impression": "^1.0.5",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-flow-vars": "^0.3.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0"
   },
   "dependencies": {
     "react-native-vector-icons": "^2.1.0"

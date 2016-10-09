@@ -2,7 +2,6 @@ import { darken } from './utils/color';
 import { getPixel } from './utils/pixel';
 
 
-
 // 主色调
 export const brandPrimary = '#369';
 export const brandSecondary = '#399';
@@ -37,9 +36,11 @@ export const paddingHorizontalSm = 8;
 export const paddingHorizontalLg = 16;
 
 // text
-export const textDefault = grayDark;
-export const textMuted = grayLight;
-export const textHolder = '#fff3';
+export const text = {
+    default: grayDark,
+    muted: grayLight,
+    holder: '#fff3',
+};
 
 
 // Button
@@ -66,29 +67,29 @@ export const button = {
     bgDefaultActive: darken(grayFloor, 6),
     borderDefaultOutline: grayLighten,
 
-    fontSize: fontSize,
-    fontSizeSm: fontSizeSm,
-    fontSizeLg: fontSizeLg,
+    fontSize,
+    fontSizeSm,
+    fontSizeLg,
 
-    paddingVertical: paddingVertical,
-    paddingVerticalSm: paddingVerticalSm,
-    paddingVerticalLg: paddingVerticalLg,
-    paddingHorizontal: paddingHorizontal,
-    paddingHorizontalSm: paddingHorizontalSm,
-    paddingHorizontalLg: paddingHorizontalLg,
+    paddingVertical,
+    paddingVerticalSm,
+    paddingVerticalLg,
+    paddingHorizontal,
+    paddingHorizontalSm,
+    paddingHorizontalLg,
 
-    borderRadius: borderRadius,
-    borderRadiusSm: borderRadiusSm,
-    borderRadiusLg: borderRadiusLg,
+    borderRadius,
+    borderRadiusSm,
+    borderRadiusLg,
 };
 
 // List
 export const list = {
-    borderWidth: borderWidth,
+    borderWidth,
     borderColor: grayLighten,
     marginBottom: paddingVerticalLg,
     paddingVertical: 14,
-    paddingHorizontal: paddingHorizontal,
+    paddingHorizontal,
     backgroundColor: grayFloor,
     backgroundColorActive: '#ebebeb',
 };

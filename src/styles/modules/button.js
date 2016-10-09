@@ -1,6 +1,4 @@
-import { button as style }  from '../variables';
-import { darken } from '../utils/color';
-import { getPixel } from '../utils/pixel';
+import { button as style } from '../variables';
 import shadow from '../utils/shadow';
 
 // 按钮
@@ -24,7 +22,7 @@ const btnSm = {
     paddingVertical: style.paddingVerticalSm,
     paddingHorizontal: style.paddingHorizontalSm,
     borderRadius: style.borderRadiusSm,
-}
+};
 
 // outline
 const btnPrimaryOutline = {
@@ -53,7 +51,7 @@ const text = {
 };
 
 
-export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = false, disabled = false ) => {
+export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = false, disabled = false) => {
     let mergeButton = [btn],
         mergeText = [text],
         activeButtonBgColor = style.bgPrimaryActive;
@@ -110,7 +108,7 @@ export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = 
                     color: style.colorSecondary,
                 });
                 break;
-            case 'default':
+            default:
                 mergeButton.push(btnDefaultOutline);
         }
 

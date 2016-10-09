@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import {
     Text,
-    View,
     Platform,
     TouchableHighlight,
     TouchableNativeFeedback,
@@ -9,7 +8,7 @@ import {
 import { getButtonStyle } from '../../styles/modules/button';
 
 // Button
-const Button = ({ theme, size, outline, disabled=false, style, children, ...others }) => {
+const Button = ({ theme, size, outline, disabled = false, style, children, ...others }) => {
     let { button, activeButtonBg, text } = getButtonStyle(theme, size, outline, disabled),
         Component = Platform.OS === 'ios' ? TouchableHighlight : TouchableNativeFeedback;
 

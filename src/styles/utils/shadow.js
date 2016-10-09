@@ -1,8 +1,7 @@
 import { Platform } from 'react-native';
-import * as Variables  from '../variables';
 
 // 获取阴影
-const getShadow = (level = 1) => {
+const getShadow = () => {
     return Platform.select({
         ios: {
             shadowColor: 'rgba(0,0,0, .24)',
@@ -15,7 +14,7 @@ const getShadow = (level = 1) => {
         },
         android: {
             elevation: 2,
-        }
+        },
     });
 };
 
