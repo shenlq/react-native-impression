@@ -90,6 +90,6 @@ export const list = {
     paddingVertical: 14,
     paddingHorizontal: paddingHorizontal,
     backgroundColor: grayFloor,
-    backgroundColorActive: '#eee',
+    backgroundColorActive: '#ebebeb',
 };
 
