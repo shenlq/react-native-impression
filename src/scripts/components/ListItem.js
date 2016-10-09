@@ -44,7 +44,7 @@ const ListItem = ({ onPress, style, children, ...others }) => {
 
 ListItem.propTypes = {
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
-    children: PropTypes.element,
+    children: PropTypes.node,
 };
 
 export default ListItem;
