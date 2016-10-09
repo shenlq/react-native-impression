@@ -1,5 +1,5 @@
 {
-  "name": "impression-react-native",
+  "name": "react-native-impression",
   "version": "0.0.2",
   "main": "./src/scripts/index.js",
   "scripts": {
@@ -8,5 +8,11 @@
   "peerDependencies": {
     "react": "15.3.2",
     "react-native": "0.34.1"
+  },
+  "devDependencies": {
+    "eslint-config-impression": "^1.0.5"
+  },
+  "dependencies": {
+    "react-native-vector-icons": "^2.1.0"
   }
 }
