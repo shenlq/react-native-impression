@@ -121,3 +121,13 @@ export const loading = {
     messageMarginTop: spacerVerticalLg,
 };
 
+// Toast
+export const toast = {
+    spacerBottom: 80,
+    color: grayFloor,
+    padding: spacerVertical,
+    fontSize: 13,
+    borderRadius,
+    backgroundColor: '#0008',
+};
+
