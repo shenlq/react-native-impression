@@ -1,10 +1,9 @@
-import button from './src/scripts/components/Button';
-import list from './src/scripts/components/List';
-import media from './src/scripts/components/Media';
+import * as components from './src/scripts/index';
 import styles from './src/styles/utils';
 
-export const Button = button;
-export const List = list;
-export const Media = media;
+export const Button = components.Button;
+export const List = components.List;
+export const Media = components.Media;
+export const Loading = components.Loading;
 
 export default styles;
