@@ -103,3 +103,15 @@ export const media = {
     headerFontWeight: 'bold',
 };
 
+// Loading
+export const loading = {
+    width: 120,
+    fontSize: 13,
+    fontWeight: 'bold',
+    color: '#ddd',
+    paddingVertical: 20,
+    backgroundColor: '#0006',
+    borderRadius: borderRadiusLg,
+    messageMarginTop: spacerVerticalLg,
+};
+
