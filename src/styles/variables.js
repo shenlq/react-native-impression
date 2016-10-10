@@ -131,3 +131,9 @@ export const toast = {
     backgroundColor: '#0008',
 };
 
+// StatusBar
+export const statusBar = {
+    height: 20,
+    backgroundColor: darken(brandPrimary, 6),
+};
+

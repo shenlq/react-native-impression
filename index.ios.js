@@ -6,28 +6,17 @@
 
 import React from 'react';
 import {
-    AppRegistry,
-    StyleSheet,
+    Text,
     View,
+    AppRegistry,
 } from 'react-native';
-import { Button, Toast } from './src/scripts/index';
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        marginTop: 30,
-        marginBottom: 30,
-        marginLeft: 30,
-        marginRight: 30,
-        justifyContent: 'space-between',
-    },
-});
+import { StatusBar } from './src/scripts/index';
 
 const robot = () => {
     return (
-        <View style={styles.container}>
-            <Button onPress={() => Toast.show('参数填写有误！')}>Toast</Button>
-            <Toast />
+        <View>
+            <StatusBar />
+            <Text>StatusBar</Text>
         </View>
     );
 };

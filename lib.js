@@ -7,5 +7,6 @@ export const Media = components.Media;
 export const Loading = components.Loading;
 export const Hr = components.Hr;
 export const Toast = components.Toast;
+export const StatusBar = components.StatusBar;
 
 export default styles;
