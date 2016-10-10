@@ -5,6 +5,7 @@ import loading from './components/Loading';
 import hr from './components/Hr';
 import toast from './components/Toast';
 import statusBar from './components/StatusBar';
+import tipBar from './components/TipBar';
 
 export const Button = button;
 export const List = list;
@@ -13,3 +14,4 @@ export const Loading = loading;
 export const Hr = hr;
 export const Toast = toast;
 export const StatusBar = statusBar;
+export const TipBar = tipBar;

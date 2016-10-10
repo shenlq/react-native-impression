@@ -16,8 +16,8 @@ let TOAST,
 export default class Toast extends Component {
     // props 校验
     static propTypes = {
-        // 动画类型
         animationType: PropTypes.string,
+        style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     }
     // 默认props
     static defaultProps = {
@@ -37,7 +37,7 @@ export default class Toast extends Component {
         TOAST = undefined;
     }
     render() {
-        let { animationType } = this.props,
+        let { animationType, style } = this.props,
             { visible, message } = this.state;
 
         return (
@@ -46,7 +46,7 @@ export default class Toast extends Component {
                 transparent
                 visible={visible}>
                 <View style={toastMask}>
-                    <View style={toast}>
+                    <View style={[style, toast]}>
                         <Text style={toastBody}>{message}</Text>
                     </View>
                 </View>

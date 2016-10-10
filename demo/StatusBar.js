@@ -6,20 +6,17 @@
 
 import React from 'react';
 import {
-    View,
     Text,
+    View,
     AppRegistry,
 } from 'react-native';
-import { StatusBar, TipBar } from './src/scripts/index';
-import styles from './src/styles/utils';
+import { StatusBar } from './src/scripts/index';
 
 const robot = () => {
     return (
         <View>
             <StatusBar />
-            <TipBar>
-                <Text style={[styles.textMuted, styles.textSm]}>没有更多数据了</Text>
-            </TipBar>
+            <Text>StatusBar</Text>
         </View>
     );
 };

@@ -139,3 +139,10 @@ export const statusBar = {
     borderBottomColor: darken(brandPrimary, 6),
 };
 
+// TipBar
+export const tipBar = {
+    paddingVertical: spacerVertical,
+    paddingHorizontal: spacerHorizontalLg * 2,
+    bodyPaddingHorizontal: spacerHorizontalLg,
+};
+

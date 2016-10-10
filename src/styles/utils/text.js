@@ -1,6 +1,6 @@
 import * as variables from '../variables';
 
-// == text
+// == text color
 export const textDefault = {
     color: variables.text.default,
 };
@@ -24,3 +24,16 @@ export const textWarning = {
 export const textHolder = {
     color: variables.text.holder,
 };
+
+// == font size
+export const textLg = {
+    fontSize: variables.fontSizeLg,
+};
+
+export const textSm = {
+    fontSize: variables.fontSizeSm,
+};
+
+export const textBold = {
+    fontWeight: 'bold',
+}
