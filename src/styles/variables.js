@@ -42,6 +42,12 @@ export const text = {
     holder: '#fff3',
 };
 
+// Hr
+export const hr = {
+    borderWidth,
+    borderColor,
+};
+
 
 // Button
 export const button = {
