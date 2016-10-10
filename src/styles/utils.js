@@ -2,6 +2,7 @@ import * as variables from './variables';
 import * as flex from './utils/flex';
 import * as spacer from './utils/spacer';
 import * as text from './utils/text';
+import * as shadow from './utils/shadow';
 
 // == border
 export const bordered = {
@@ -19,4 +20,5 @@ export default {
     ...flex,
     ...spacer,
     ...text,
+    ...shadow,
 };
