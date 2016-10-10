@@ -1,5 +1,5 @@
-import { darken } from './utils/color';
-import { getPixel } from './utils/pixel';
+import { darken } from './mixins/color';
+import { getPixel } from './mixins/pixel';
 
 
 // 主色调
@@ -28,12 +28,12 @@ export const borderWidth = getPixel();
 export const borderColor = grayLighten;
 
 // Space
-export const paddingVertical = 10;
-export const paddingVerticalSm = 8;
-export const paddingVerticalLg = 16;
-export const paddingHorizontal = 10;
-export const paddingHorizontalSm = 8;
-export const paddingHorizontalLg = 16;
+export const spacerVertical = 10;
+export const spacerVerticalSm = 8;
+export const spacerVerticalLg = 16;
+export const spacerHorizontal = 10;
+export const spacerHorizontalSm = 8;
+export const spacerHorizontalLg = 16;
 
 // text
 export const text = {
@@ -71,12 +71,12 @@ export const button = {
     fontSizeSm,
     fontSizeLg,
 
-    paddingVertical,
-    paddingVerticalSm,
-    paddingVerticalLg,
-    paddingHorizontal,
-    paddingHorizontalSm,
-    paddingHorizontalLg,
+    paddingVertical: spacerVertical,
+    paddingVerticalSm: spacerVerticalSm,
+    paddingVerticalLg: spacerVerticalLg,
+    paddingHorizontal: spacerHorizontal,
+    paddingHorizontalSm: spacerHorizontalSm,
+    paddingHorizontalLg: spacerHorizontalLg,
 
     borderRadius,
     borderRadiusSm,
@@ -87,9 +87,9 @@ export const button = {
 export const list = {
     borderWidth,
     borderColor,
-    marginBottom: paddingVerticalLg,
+    marginBottom: spacerVerticalLg,
     paddingVertical: 14,
-    paddingHorizontal,
+    paddingHorizontal: spacerHorizontal,
     backgroundColor: grayFloor,
     backgroundColorActive: '#ebebeb',
 };
@@ -97,8 +97,8 @@ export const list = {
 // Media
 export const media = {
     backgroundColor: grayFloor,
-    paddingVertical,
-    paddingHorizontal,
+    paddingVertical: spacerVertical,
+    paddingHorizontal: spacerHorizontal,
     headerFontSize: fontSize,
     headerFontWeight: 'bold',
 };

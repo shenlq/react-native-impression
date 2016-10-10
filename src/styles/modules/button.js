@@ -1,5 +1,5 @@
 import { button as style } from '../variables';
-import shadow from '../utils/shadow';
+import shadow from '../mixins/shadow';
 
 // 按钮
 const btn = {

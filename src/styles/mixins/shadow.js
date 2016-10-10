@@ -6,7 +6,7 @@ const getShadow = () => {
         ios: {
             shadowColor: 'rgba(0,0,0, .24)',
             shadowOffset: {
-                height: 4,
+                height: 2,
                 width: 1,
             },
             shadowOpacity: 1,

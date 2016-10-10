@@ -6,7 +6,7 @@ import {
     TouchableNativeFeedback,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { flex } from '../../styles/modules/flex';
+import { flex } from '../../styles/utils/flex';
 import { listItem, listArrow } from '../../styles/modules/list';
 
 // ListItem

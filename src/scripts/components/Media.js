@@ -3,7 +3,7 @@ import {
     View,
 } from 'react-native';
 import { media } from '../../styles/modules/media';
-import { borderVerticaled } from '../../styles/modules/common';
+import { borderVerticaled } from '../../styles/utils';
 import MediaObject from './MediaObject';
 import MediaBody from './MediaBody';
 import MediaHeader from './MediaHeader';
