@@ -135,5 +135,7 @@ export const toast = {
 export const statusBar = {
     height: 20,
     backgroundColor: darken(brandPrimary, 4),
+    borderBottomWidth: borderWidth,
+    borderBottomColor: darken(brandPrimary, 6),
 };
 
