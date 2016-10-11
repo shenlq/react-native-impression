@@ -11,5 +11,6 @@ export const StatusBar = components.StatusBar;
 export const TipBar = components.TipBar;
 export const Confirm = components.Confirm;
 export const Alert = components.Alert;
+export const SegmentedControl = components.SegmentedControl;
 
 export default styles;

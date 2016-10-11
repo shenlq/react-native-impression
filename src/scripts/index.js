@@ -8,6 +8,7 @@ import statusBar from './components/StatusBar';
 import tipBar from './components/TipBar';
 import confirm from './components/Confirm';
 import alert from './components/Alert';
+import segmentedControl from './components/SegmentedControl';
 
 export const Button = button;
 export const List = list;
@@ -19,3 +20,4 @@ export const StatusBar = statusBar;
 export const TipBar = tipBar;
 export const Confirm = confirm;
 export const Alert = alert;
+export const SegmentedControl = segmentedControl;

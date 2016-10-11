@@ -166,3 +166,15 @@ export const confirm = {
     buttonBackgroundColorActive: '#ebebeb',
 };
 
+// SegmentedControl
+export const segmentedControl = {
+    fontSize: fontSizeSm,
+    tintColor: grayFloor,
+    activeColor: brandPrimary,
+    backgroundColor: 'transparent',
+    borderWidth: 1,
+    borderRadius,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+};
+
