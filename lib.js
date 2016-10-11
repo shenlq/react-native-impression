@@ -9,5 +9,6 @@ export const Hr = components.Hr;
 export const Toast = components.Toast;
 export const StatusBar = components.StatusBar;
 export const TipBar = components.TipBar;
+export const Confirm = components.Confirm;
 
 export default styles;

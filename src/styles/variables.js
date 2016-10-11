@@ -148,3 +148,20 @@ export const tipBar = {
     bodyPaddingHorizontal: spacerHorizontalLg,
 };
 
+// Confirm
+export const confirm = {
+    width: 240,
+    borderWidth,
+    borderColor,
+    borderRadius,
+    spacer: 20,
+    titleFontSize: fontSize,
+    maskBackgroundColor: '#0006',
+    backgroundColor: grayFloor,
+    buttonFontSize: fontSize,
+    buttonColorPrimary: brandPrimary,
+    buttonColorSecondary: text.muted,
+    buttonPaddingVertical: 14,
+    buttonBackgroundColorActive: '#ebebeb',
+};
+
