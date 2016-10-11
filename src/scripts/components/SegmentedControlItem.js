@@ -11,6 +11,7 @@ import {
 const SegmentedControlItem = ({ selected, onPress, style, children }) => {
     return (
         <TouchableHighlight
+            underlayColor="transparent"
             onPress={onPress}
             style={[segmentItem, selected ? segmentItemActive : null, style]}>
             <Text style={[segmentItemText, selected ? segmentItemActiveText : null]}>{children}</Text>
