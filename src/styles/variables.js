@@ -143,7 +143,7 @@ export const statusBar = {
 export const tipBar = {
     color: text.muted,
     fontSize: fontSizeSm,
-    paddingVertical: spacerVertical,
+    paddingVertical: spacerVertical * 3,
     paddingHorizontal: spacerHorizontalLg * 2,
     bodyPaddingHorizontal: spacerHorizontalLg,
 };

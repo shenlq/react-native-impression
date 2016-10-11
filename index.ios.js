@@ -8,6 +8,7 @@ import React from 'react';
 import {
     View,
     AppRegistry,
+    ActivityIndicator,
 } from 'react-native';
 import { StatusBar, TipBar } from './src/scripts/index';
 
@@ -17,6 +18,9 @@ const robot = () => {
             <StatusBar />
             <TipBar>加载更多数据</TipBar>
             <TipBar>没有更多数据了</TipBar>
+            <TipBar>
+                <ActivityIndicator />
+            </TipBar>
         </View>
     );
 };
