@@ -64,7 +64,7 @@ export default class Confirm extends Component {
                         <View style={confirmFooter}>
                             <TouchableHighlight
                                 activeOpacity={1}
-                                onPress={() => this.onPressHandle(true)}
+                                onPress={() => this.onPressHandle(buttonReverse)}
                                 style={confirmButtonStyle}
                                 underlayColor={backgroundColorActive}>
                                 <Text style={{ color: buttonReverse ? colorPrimary : colorSecondary }}>
@@ -75,7 +75,7 @@ export default class Confirm extends Component {
                             <TouchableHighlight
                                 style={confirmButtonStyle}
                                 activeOpacity={1}
-                                onPress={() => this.onPressHandle(false)}
+                                onPress={() => this.onPressHandle(!buttonReverse)}
                                 underlayColor={backgroundColorActive}>
                                 <Text
                                     style={{
