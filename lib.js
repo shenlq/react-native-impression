@@ -10,5 +10,6 @@ export const Toast = components.Toast;
 export const StatusBar = components.StatusBar;
 export const TipBar = components.TipBar;
 export const Confirm = components.Confirm;
+export const Alert = components.Alert;
 
 export default styles;
