@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
+import * as utils from '../utils';
 import Hr from './Hr';
-import { tipBar, tipBody, tipLine } from '../../styles/modules/tipBar';
+import { tipBar, tipBody, tipLine, tipText } from '../../styles/modules/tipBar';
 
 /**
  * 列表下拉信息提示.
@@ -11,7 +12,7 @@ const TipBar = ({ style, children }) => {
         <View style={[style, tipBar]}>
             <Hr style={tipLine} />
             <View style={tipBody}>
-                {children}
+                { utils.isString(children) ? <Text style={tipText}>{children}</Text> : children }
             </View>
             <Hr style={tipLine} />
         </View>

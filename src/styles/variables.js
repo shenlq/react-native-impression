@@ -141,6 +141,8 @@ export const statusBar = {
 
 // TipBar
 export const tipBar = {
+    color: text.muted,
+    fontSize: fontSizeSm,
     paddingVertical: spacerVertical,
     paddingHorizontal: spacerHorizontalLg * 2,
     bodyPaddingHorizontal: spacerHorizontalLg,

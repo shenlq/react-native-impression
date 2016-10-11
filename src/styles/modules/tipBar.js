@@ -16,3 +16,8 @@ export const tipBody = {
 export const tipLine = {
     flex: 1,
 };
+
+export const tipText = {
+    color: style.color,
+    fontSize: style.fontSize,
+};
