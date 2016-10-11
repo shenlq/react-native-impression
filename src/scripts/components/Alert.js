@@ -62,7 +62,13 @@ export default class Alert extends Component {
     render() {
         let { button, animationType, theme } = this.props,
             { visible, title, message } = this.state,
-            { backgroundColorActive, colorPrimary, colorSecondary, ...confirmButtonStyle } = confirmButton;
+            {
+                backgroundColorActive,
+                colorPrimary,
+                colorSecondary,
+                buttonFontSize,
+                ...confirmButtonStyle,
+            } = confirmButton;
 
         return (
             <Modal
@@ -73,7 +79,7 @@ export default class Alert extends Component {
                     <View style={confirm}>
                         <View style={confirmBody}>
                             { utils.isString(title) ? <Text style={confirmTitle}>{title}</Text> : title }
-                            { utils.isString(message) ? <Text style={confirmMessage}>{message}</Text> : message }
+                            { utils.isString(message) ? <Text>{message}</Text> : message }
                         </View>
                         <View style={confirmFooter}>
                             <TouchableHighlight
@@ -81,7 +87,10 @@ export default class Alert extends Component {
                                 onPress={this.onPressHandle}
                                 style={confirmButtonStyle}
                                 underlayColor={backgroundColorActive}>
-                                <Text style={{ color: theme === 'primary' ? colorPrimary : colorSecondary }}>
+                                <Text
+                                    style={{
+                                        color: theme === 'primary' ? colorPrimary : colorSecondary,
+                                        fontSize: buttonFontSize }}>
                                     {button}
                                 </Text>
                             </TouchableHighlight>

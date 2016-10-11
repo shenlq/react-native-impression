@@ -29,9 +29,7 @@ class robot extends Component {
         return (
             <View>
                 <StatusBar />
-                <Button
-                    style={{ bottom: 0, left: 0 }}
-                    onPress={this.clickHandle}>
+                <Button onPress={this.clickHandle}>
                     Alert
                 </Button>
                 <Alert />

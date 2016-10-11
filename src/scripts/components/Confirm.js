@@ -42,7 +42,13 @@ export default class Confirm extends Component {
     }
     render() {
         let { buttonOk, buttonCancel, buttonReverse, animationType, title, children } = this.props,
-            { backgroundColorActive, colorPrimary, colorSecondary, ...confirmButtonStyle } = confirmButton;
+            {
+                backgroundColorActive,
+                colorPrimary,
+                colorSecondary,
+                buttonFontSize,
+                ...confirmButtonStyle,
+            } = confirmButton;
 
         return (
             <Modal
@@ -71,7 +77,10 @@ export default class Confirm extends Component {
                                 activeOpacity={1}
                                 onPress={() => this.onPressHandle(false)}
                                 underlayColor={backgroundColorActive}>
-                                <Text style={{ color: buttonReverse ? colorSecondary : colorPrimary }}>
+                                <Text
+                                    style={{
+                                        color: buttonReverse ? colorSecondary : colorPrimary,
+                                        fontSize: buttonFontSize }}>
                                     {buttonReverse ? buttonCancel : buttonOk}
                                 </Text>
                             </TouchableHighlight>

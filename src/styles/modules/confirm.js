@@ -16,16 +16,16 @@ export const confirm = {
 
 export const confirmBody = {
     alignItems: 'center',
+    paddingVertical: style.spacer,
 };
 
 export const confirmTitle = {
-    paddingVertical: style.spacer,
     fontWeight: 'bold',
     fontSize: style.titleFontSize,
+    marginBottom: style.spacer,
 };
 
 export const confirmMessage = {
-    marginBottom: style.spacer,
     color: '#666',
 };
 
@@ -39,6 +39,7 @@ export const confirmFooter = {
 export const confirmButton = {
     flex: 1,
     alignItems: 'center',
+    buttonFontSize: style.buttonFontSize,
     colorPrimary: style.buttonColorPrimary,
     colorSecondary: style.buttonColorSecondary,
     paddingVertical: style.buttonPaddingVertical,
