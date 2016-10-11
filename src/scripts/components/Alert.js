@@ -10,7 +10,6 @@ import {
     confirm,
     confirmBody,
     confirmTitle,
-    confirmMessage,
     confirmFooter,
     confirmButton,
 } from '../../styles/modules/confirm';
@@ -50,6 +49,11 @@ export default class Alert extends Component {
 
         ALERT = this;
     }
+    // 清空Alert引用
+    componentWillUnmount() {
+        ALERT = undefined;
+    }
+    // 隐藏Alert
     onPressHandle = () => {
         let { onPress } = this.props;
 
@@ -109,12 +113,12 @@ Alert.show = params => {
         visible: true,
     };
 
-    ALERT.setState(state);
+    ALERT && ALERT.setState(state);
 };
 
 // hide
 Alert.hide = () => {
-    ALERT.setState({
+    ALERT && ALERT.setState({
         visible: false,
     });
 };

@@ -156,6 +156,7 @@ export const confirm = {
     borderRadius,
     spacer: 20,
     titleFontSize: 15,
+    messageColor: '#666',
     maskBackgroundColor: '#0006',
     backgroundColor: grayFloor,
     buttonFontSize: 15,

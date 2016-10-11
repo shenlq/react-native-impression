@@ -26,7 +26,7 @@ export const confirmTitle = {
 };
 
 export const confirmMessage = {
-    color: '#666',
+    color: style.messageColor,
 };
 
 export const confirmFooter = {
