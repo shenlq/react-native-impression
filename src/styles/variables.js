@@ -91,6 +91,7 @@ export const button = {
 
 // List
 export const list = {
+    color: text.default,
     borderWidth,
     borderColor,
     marginBottom: spacerVerticalLg,
@@ -102,11 +103,12 @@ export const list = {
 
 // Media
 export const media = {
+    color: text.default,
     backgroundColor: grayFloor,
     paddingVertical: spacerVertical,
     paddingHorizontal: spacerHorizontal,
-    headerFontSize: fontSize,
-    headerFontWeight: 'bold',
+    headerFontSize: 15,
+    headerFontWeight: 'normal',
     backgroundColorActive: '#ebebeb',
 };
 

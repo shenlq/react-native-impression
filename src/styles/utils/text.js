@@ -36,4 +36,17 @@ export const textSm = {
 
 export const textBold = {
     fontWeight: 'bold',
-}
+};
+
+// == text align
+export const textLeft = {
+    textAlign: 'left',
+};
+
+export const textCenter = {
+    textAlign: 'center',
+};
+
+export const textRight = {
+    textAlign: 'right',
+};
