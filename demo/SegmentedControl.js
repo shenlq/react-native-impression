@@ -10,7 +10,7 @@ import {
     StyleSheet,
     AppRegistry,
 } from 'react-native';
-import { StatusBar, 'SegmentedControl' } from './src/scripts/index';
+import { StatusBar, SegmentedControl } from './src/scripts/index';
 
 const styles = StyleSheet.create({
     header: {

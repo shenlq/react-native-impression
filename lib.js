@@ -12,5 +12,6 @@ export const TipBar = components.TipBar;
 export const Confirm = components.Confirm;
 export const Alert = components.Alert;
 export const SegmentedControl = components.SegmentedControl;
+export const Tabs = components.Tabs;
 
 export default styles;
