@@ -14,7 +14,7 @@ export const mediaObject = {
 };
 
 export const mediaBody = {
-
+    flex: 1,
 };
 
 export const mediaHeader = {

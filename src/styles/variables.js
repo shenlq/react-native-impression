@@ -107,6 +107,7 @@ export const media = {
     paddingHorizontal: spacerHorizontal,
     headerFontSize: fontSize,
     headerFontWeight: 'bold',
+    backgroundColorActive: '#ebebeb',
 };
 
 // Loading
