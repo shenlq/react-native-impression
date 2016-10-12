@@ -7,14 +7,14 @@ import { tipBar, tipBody, tipLine, tipText } from '../../styles/modules/tipBar';
 /**
  * 列表下拉信息提示.
  */
-const TipBar = ({ style, children }) => {
+const TipBar = ({ line = false, style, children }) => {
     return (
         <View style={[style, tipBar]}>
-            <Hr style={tipLine} />
+            { line && <Hr style={tipLine} /> }
             <View style={tipBody}>
                 { utils.isString(children) ? <Text style={tipText}>{children}</Text> : children }
             </View>
-            <Hr style={tipLine} />
+            { line && <Hr style={tipLine} /> }
         </View>
     );
 };
@@ -22,6 +22,7 @@ const TipBar = ({ style, children }) => {
 TipBar.propTypes = {
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     children: PropTypes.node,
+    line: PropTypes.bool,
 };
 
 export default TipBar;
