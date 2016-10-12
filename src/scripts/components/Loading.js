@@ -10,6 +10,7 @@ export default class Loading extends Component {
     static propTypes = {
         animationType: PropTypes.string,
         children: PropTypes.node,
+        onRequestClose: PropTypes.func,
     }
     // 默认props
     static defaultProps = {
@@ -28,15 +29,21 @@ export default class Loading extends Component {
     componentWillUnmount() {
         LOADING = undefined;
     }
+    onRequestCloseHandle = () => {
+        let { onRequestClose } = this.props;
+
+        onRequestClose && onRequestClose();
+    }
     render() {
         let { animationType, children } = this.props,
             { visible } = this.state;
 
         return (
             <Modal
-                animationType={animationType}
                 transparent
-                visible={visible}>
+                visible={visible}
+                onRequestClose={this.onRequestCloseHandle}
+                animationType={animationType}>
                 <View style={styles.loadingMask}>
                     <View style={styles.loading}>
                         <View style={styles.loadingBody}>

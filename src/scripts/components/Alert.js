@@ -29,6 +29,7 @@ export default class Alert extends Component {
         theme: PropTypes.oneOf(['primary', 'secondary']),
         visible: PropTypes.bool,
         onPress: PropTypes.func,
+        onRequestClose: PropTypes.func,
     }
     // 默认props
     static defaultProps = {
@@ -63,6 +64,11 @@ export default class Alert extends Component {
 
         onPress && onPress();
     }
+    onRequestCloseHandle = () => {
+        let { onRequestClose } = this.props;
+
+        onRequestClose && onRequestClose();
+    }
     render() {
         let { button, animationType, theme } = this.props,
             { visible, title, message } = this.state,
@@ -76,8 +82,9 @@ export default class Alert extends Component {
 
         return (
             <Modal
-                animationType={animationType}
                 transparent
+                animationType={animationType}
+                onRequestClose={this.onRequestCloseHandle}
                 visible={visible}>
                 <View style={confirmMask}>
                     <View style={confirm}>

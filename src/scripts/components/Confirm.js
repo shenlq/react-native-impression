@@ -27,6 +27,7 @@ export default class Confirm extends Component {
         buttonReverse: PropTypes.bool,
         onPress: PropTypes.func,
         children: PropTypes.any,
+        onRequestClose: PropTypes.func,
     }
     // 默认props
     static defaultProps = {
@@ -40,6 +41,11 @@ export default class Confirm extends Component {
 
         onPress && onPress(flag);
     }
+    onRequestCloseHandle = () => {
+        let { onRequestClose } = this.props;
+
+        onRequestClose && onRequestClose();
+    }
     render() {
         let { buttonOk, buttonCancel, buttonReverse, animationType, title, children } = this.props,
             {
@@ -52,9 +58,10 @@ export default class Confirm extends Component {
 
         return (
             <Modal
-                animationType={animationType}
                 transparent
-                visible>
+                visible
+                onRequestClose={this.onRequestCloseHandle}
+                animationType={animationType}>
                 <View style={confirmMask}>
                     <View style={confirm}>
                         <View style={confirmBody}>

@@ -18,6 +18,7 @@ export default class Toast extends Component {
     static propTypes = {
         animationType: PropTypes.string,
         style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
+        onRequestClose: PropTypes.func,
     }
     // 默认props
     static defaultProps = {
@@ -36,15 +37,21 @@ export default class Toast extends Component {
         clearTimeout(TIMER);
         TOAST = undefined;
     }
+    onRequestCloseHandle = () => {
+        let { onRequestClose } = this.props;
+
+        onRequestClose && onRequestClose();
+    }
     render() {
         let { animationType, style } = this.props,
             { visible, message } = this.state;
 
         return (
             <Modal
-                animationType={animationType}
                 transparent
-                visible={visible}>
+                visible={visible}
+                animationType={animationType}
+                onRequestClose={this.onRequestCloseHandle}>
                 <View style={toastMask}>
                     <View style={[style, toast]}>
                         <Text style={toastBody}>{message}</Text>
