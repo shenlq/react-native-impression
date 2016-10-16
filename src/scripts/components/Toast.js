@@ -35,7 +35,6 @@ export default class Toast extends Component {
     // 清空定时器
     componentWillUnmount() {
         clearTimeout(TIMER);
-        TOAST = undefined;
     }
     onRequestCloseHandle = () => {
         let { onRequestClose } = this.props;

@@ -50,10 +50,6 @@ export default class Alert extends Component {
 
         ALERT = this;
     }
-    // 清空Alert引用
-    componentWillUnmount() {
-        ALERT = undefined;
-    }
     // 隐藏Alert
     onPressHandle = () => {
         let { onPress } = this.props;

@@ -25,10 +25,6 @@ export default class Loading extends Component {
         };
         LOADING = this;
     }
-    // 移除
-    componentWillUnmount() {
-        LOADING = undefined;
-    }
     onRequestCloseHandle = () => {
         let { onRequestClose } = this.props;
 
