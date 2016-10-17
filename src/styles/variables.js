@@ -57,13 +57,13 @@ export const button = {
     bgPrimary: brandPrimary,
     colorPrimary: brandPrimary,
     bgPrimaryActive: darken(brandPrimary, 6),
-    bgPrimaryOutline: grayFloor,
+    bgPrimaryOutline: 'transparent',
     borderPrimaryOutline: brandPrimary,
 
     bgSecondary: brandSecondary,
     colorSecondary: brandSecondary,
     bgSecondaryActive: darken(brandSecondary, 6),
-    bgSecondaryOutline: grayFloor,
+    bgSecondaryOutline: 'transparent',
     borderSecondaryOutline: brandSecondary,
 
 
@@ -79,14 +79,14 @@ export const button = {
 
     paddingVertical: spacerVertical,
     paddingVerticalSm: spacerVerticalSm,
-    paddingVerticalLg: spacerVerticalLg,
+    paddingVerticalLg: 12,
     paddingHorizontal: spacerHorizontal,
     paddingHorizontalSm: spacerHorizontalSm,
-    paddingHorizontalLg: spacerHorizontalLg,
+    paddingHorizontalLg: 12,
 
     borderRadius,
     borderRadiusSm,
-    borderRadiusLg,
+    borderRadiusLg: borderRadius,
 };
 
 // List
