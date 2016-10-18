@@ -9,3 +9,7 @@ export const flexItem = {
     flex: 1,
 };
 
+export const justifyContent = {
+    flex: 1,
+    justifyContent: 'center',
+};
