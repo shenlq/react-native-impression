@@ -20,13 +20,13 @@ export const segmentItemActive = {
 };
 
 export const segmentItemFirst = {
-    borderTopLeftRadius: style.borderRadius - 1,
-    borderBottomLeftRadius: style.borderRadius - 1,
+    borderTopLeftRadius: style.borderRadius,
+    borderBottomLeftRadius: style.borderRadius,
 };
 
 export const segmentItemLast = {
-    borderTopRightRadius: style.borderRadius - 1,
-    borderBottomRightRadius: style.borderRadius - 1,
+    borderTopRightRadius: style.borderRadius,
+    borderBottomRightRadius: style.borderRadius,
 };
 
 export const segmentItemText = {

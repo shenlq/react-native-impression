@@ -23,15 +23,16 @@ const ListItem = ({ onPress, style, children, ...others }) => {
         <Component
             {...others}
             onPress={onPress}
-            style={[itemStyle, style]}
             underlayColor={backgroundColorActive}>
-            <View style={flex}>
+            <View style={[itemStyle, style]}>
                 <View style={flex}>
-                    {children}
+                    <View style={flex}>
+                        {children}
+                    </View>
+                    { onPress &&
+                        <Icon name="angle-right" size={listArrow.size} color={listArrow.color} />
+                    }
                 </View>
-                { onPress &&
-                    <Icon name="angle-right" size={listArrow.size} color={listArrow.color} />
-                }
             </View>
         </Component>
     );
