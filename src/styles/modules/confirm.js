@@ -36,6 +36,10 @@ export const confirmFooter = {
     borderTopColor: style.borderColor,
 };
 
+export const confirmFooterFlex = {
+    flex: 1,
+};
+
 export const confirmButton = {
     flex: 1,
     alignItems: 'center',

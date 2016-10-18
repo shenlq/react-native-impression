@@ -11,6 +11,7 @@ import {
     confirmBody,
     confirmTitle,
     confirmFooter,
+    confirmFooterFlex,
     confirmButton,
 } from '../../styles/modules/confirm';
 import * as utils from '../utils';
@@ -90,6 +91,7 @@ export default class Alert extends Component {
                         </View>
                         <View style={confirmFooter}>
                             <TouchableHighlight
+                                style={confirmFooterFlex}
                                 activeOpacity={1}
                                 onPress={this.onPressHandle}
                                 underlayColor={backgroundColorActive}>

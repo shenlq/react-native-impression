@@ -12,6 +12,7 @@ import {
     confirmTitle,
     confirmMessage,
     confirmFooter,
+    confirmFooterFlex,
     confirmButton,
     confirmButtonSplit,
 } from '../../styles/modules/confirm';
@@ -70,6 +71,7 @@ export default class Confirm extends Component {
                         </View>
                         <View style={confirmFooter}>
                             <TouchableHighlight
+                                style={confirmFooterFlex}
                                 activeOpacity={1}
                                 onPress={() => this.onPressHandle(buttonReverse)}
                                 underlayColor={backgroundColorActive}>
@@ -82,6 +84,7 @@ export default class Confirm extends Component {
                             <View style={confirmButtonSplit} />
                             <TouchableHighlight
                                 activeOpacity={1}
+                                style={confirmFooterFlex}
                                 onPress={() => this.onPressHandle(!buttonReverse)}
                                 underlayColor={backgroundColorActive}>
                                 <View style={confirmButtonStyle}>
