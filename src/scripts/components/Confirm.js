@@ -72,24 +72,26 @@ export default class Confirm extends Component {
                             <TouchableHighlight
                                 activeOpacity={1}
                                 onPress={() => this.onPressHandle(buttonReverse)}
-                                style={confirmButtonStyle}
                                 underlayColor={backgroundColorActive}>
-                                <Text style={{ color: buttonReverse ? colorPrimary : colorSecondary }}>
-                                    {buttonReverse ? buttonOk : buttonCancel}
-                                </Text>
+                                <View style={confirmButtonStyle}>
+                                    <Text style={{ color: buttonReverse ? colorPrimary : colorSecondary }}>
+                                        {buttonReverse ? buttonOk : buttonCancel}
+                                    </Text>
+                                </View>
                             </TouchableHighlight>
                             <View style={confirmButtonSplit} />
                             <TouchableHighlight
-                                style={confirmButtonStyle}
                                 activeOpacity={1}
                                 onPress={() => this.onPressHandle(!buttonReverse)}
                                 underlayColor={backgroundColorActive}>
-                                <Text
-                                    style={{
-                                        color: buttonReverse ? colorSecondary : colorPrimary,
-                                        fontSize: buttonFontSize }}>
-                                    {buttonReverse ? buttonCancel : buttonOk}
-                                </Text>
+                                <View style={confirmButtonStyle}>
+                                    <Text
+                                        style={{
+                                            color: buttonReverse ? colorSecondary : colorPrimary,
+                                            fontSize: buttonFontSize }}>
+                                        {buttonReverse ? buttonCancel : buttonOk}
+                                    </Text>
+                                </View>
                             </TouchableHighlight>
                         </View>
                     </View>

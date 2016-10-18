@@ -92,14 +92,15 @@ export default class Alert extends Component {
                             <TouchableHighlight
                                 activeOpacity={1}
                                 onPress={this.onPressHandle}
-                                style={confirmButtonStyle}
                                 underlayColor={backgroundColorActive}>
-                                <Text
-                                    style={{
-                                        color: theme === 'primary' ? colorPrimary : colorSecondary,
-                                        fontSize: buttonFontSize }}>
-                                    {button}
-                                </Text>
+                                <View style={confirmButtonStyle}>
+                                    <Text
+                                        style={{
+                                            color: theme === 'primary' ? colorPrimary : colorSecondary,
+                                            fontSize: buttonFontSize }}>
+                                        {button}
+                                    </Text>
+                                </View>
                             </TouchableHighlight>
                         </View>
                     </View>
