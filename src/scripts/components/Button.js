@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import {
+    View,
     Text,
     Platform,
     TouchableHighlight,
@@ -8,7 +9,7 @@ import {
 import { getButtonStyle } from '../../styles/modules/button';
 
 // Button
-const Button = ({ theme, size, outline, disabled = false, style, children, ...others }) => {
+const Button = ({ children, theme, size, outline, disabled = false, style, ...others }) => {
     let { button, activeButtonBg, text } = getButtonStyle(theme, size, outline, disabled),
         Component = Platform.OS === 'ios' ? TouchableHighlight : TouchableNativeFeedback;
 
@@ -16,11 +17,10 @@ const Button = ({ theme, size, outline, disabled = false, style, children, ...ot
         <Component
             {...others}
             disabled={disabled}
-            underlayColor={activeButtonBg}
-            style={[button, style]} >
-            <Text style={text}>
-                {children}
-            </Text>
+            underlayColor={activeButtonBg}>
+            <View style={[button, style]}>
+                <Text style={text}>{children}</Text>
+            </View>
         </Component>
     );
 };
