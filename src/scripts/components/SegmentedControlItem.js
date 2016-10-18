@@ -1,20 +1,30 @@
 import React, { PropTypes } from 'react';
-import { TouchableHighlight, Text } from 'react-native';
+import { View, Text, TouchableHighlight } from 'react-native';
 import {
     segmentItem,
+    segmentItemFirst,
+    segmentItemLast,
     segmentItemActive,
     segmentItemText,
     segmentItemActiveText,
 } from '../../styles/modules/segmentedControl';
 
 // SegmentedControlItem
-const SegmentedControlItem = ({ selected, onPress, style, children }) => {
+const SegmentedControlItem = ({ selected, isFirst, onPress, style, children }) => {
     return (
         <TouchableHighlight
             underlayColor={selected ? segmentItemActive.backgroundColor : 'transparent'}
-            onPress={onPress}
-            style={[segmentItem, selected ? segmentItemActive : null, style]}>
-            <Text style={[segmentItemText, selected ? segmentItemActiveText : null]}>{children}</Text>
+            onPress={onPress}>
+            <View
+                style={[
+                    segmentItem,
+                    selected ? segmentItemActive : null,
+                    isFirst ? segmentItemFirst : segmentItemLast,
+                    style]}>
+                <Text style={[segmentItemText, selected ? segmentItemActiveText : null]}>
+                    {children}
+                </Text>
+            </View>
         </TouchableHighlight>
     );
 };
@@ -25,6 +35,7 @@ SegmentedControlItem.propTypes = {
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     selected: PropTypes.bool,
     onPress: PropTypes.func,
+    isFirst: PropTypes.bool,
 };
 
 

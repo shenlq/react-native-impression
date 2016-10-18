@@ -35,6 +35,7 @@ export default class SegmentedControl extends Component {
         children = React.Children.map(children, (child, index) => {
             return React.cloneElement(child, {
                 key: index,
+                isFirst: index === 0,
                 onPress: () => this.onValueChangeHandle(child.props.value),
                 selected: value === child.props.value,
             });

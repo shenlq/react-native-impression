@@ -175,7 +175,7 @@ export const segmentedControl = {
     tintColor: grayFloor,
     activeColor: brandPrimary,
     backgroundColor: 'transparent',
-    borderWidth: 1,
+    borderWidth: borderWidth * 2,
     borderRadius,
     paddingHorizontal: 12,
     paddingVertical: 6,
