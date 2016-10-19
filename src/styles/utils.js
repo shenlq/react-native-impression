@@ -21,4 +21,5 @@ export default {
     ...spacer,
     ...text,
     ...shadow,
+    ...bordered,
 };
