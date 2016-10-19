@@ -10,6 +10,7 @@ import confirm from './components/Confirm';
 import alert from './components/Alert';
 import segmentedControl from './components/SegmentedControl';
 import tabs from './components/Tabs';
+import datePickerIOS from './components/DatePickerIOS';
 
 export const Button = button;
 export const List = list;
@@ -23,3 +24,4 @@ export const Confirm = confirm;
 export const Alert = alert;
 export const SegmentedControl = segmentedControl;
 export const Tabs = tabs;
+export const DatePickerIOS = datePickerIOS;

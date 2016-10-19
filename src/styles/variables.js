@@ -25,7 +25,7 @@ export const borderRadiusLg = 8;
 
 // Border
 export const borderWidth = getPixel();
-export const borderColor = grayLighten;
+export const borderColor = '#cdcdcd';
 
 // Space
 export const spacerVertical = 10;
@@ -179,5 +179,20 @@ export const segmentedControl = {
     borderRadius,
     paddingHorizontal: 12,
     paddingVertical: 6,
+};
+
+// DatePickerIOS
+export const datePicker = {
+    backgroundColorMask: '#0004',
+    backgroundColor: grayFloor,
+    borderWidth,
+    borderColor,
+    borderTopColor: '#999',
+    paddingHorizontalHeader: 10,
+    fontSizeButton: 15,
+    fontWeightButton: 'bold',
+    paddingVerticalButton: 15,
+    paddingHorizontalButton: 15,
+    colorButton: brandPrimary,
 };
 
