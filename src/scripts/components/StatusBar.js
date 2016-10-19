@@ -5,7 +5,7 @@ import { statusBar } from '../../styles/modules/statusBar';
 // StatusBarWrap
 const StatusBarWrap = ({ style, animated, showHideTransition }) => {
     // Android4.4以下
-    if(Platform.OS === 'android' && Platform.version <= 20) {
+    if(Platform.OS === 'android' && Platform.Version <= 20) {
         return <View />;
     }
 
