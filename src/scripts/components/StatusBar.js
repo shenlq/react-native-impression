@@ -1,9 +1,14 @@
 import React, { PropTypes } from 'react';
-import { View, StatusBar } from 'react-native';
+import { View, StatusBar, Platform } from 'react-native';
 import { statusBar } from '../../styles/modules/statusBar';
 
 // StatusBarWrap
 const StatusBarWrap = ({ style, animated, showHideTransition }) => {
+    // Android4.4以下
+    if(Platform.OS === 'android' && Platform.version <= 19) {
+        return <View />;
+    }
+
     return (
         <View style={[style, statusBar]}>
             <StatusBar
