@@ -17,6 +17,7 @@ export const borderVerticaled = {
 };
 
 export default {
+    ...variables,
     ...flex,
     ...spacer,
     ...text,

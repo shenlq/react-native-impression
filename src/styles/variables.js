@@ -42,6 +42,9 @@ export const text = {
     holder: '#fff3',
 };
 
+// bg
+export const bgPureActive = '#f2f2f2';
+
 // Hr
 export const hr = {
     borderWidth,
