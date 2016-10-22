@@ -14,5 +14,6 @@ export const Alert = components.Alert;
 export const SegmentedControl = components.SegmentedControl;
 export const Tabs = components.Tabs;
 export const DatePickerIOS = components.DatePickerIOS;
+export const DateBar = components.DateBar;
 
 export default styles;

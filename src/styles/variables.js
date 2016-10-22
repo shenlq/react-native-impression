@@ -190,7 +190,7 @@ export const datePicker = {
     backgroundColor: grayFloor,
     borderWidth,
     borderColor,
-    borderTopColor: '#999',
+    borderTopColor: grayLight,
     paddingHorizontalHeader: 10,
     fontSizeButton: 15,
     fontWeightButton: 'bold',
@@ -199,3 +199,16 @@ export const datePicker = {
     colorButton: brandPrimary,
 };
 
+// DateBar
+export const dateBar = {
+    color: brandPrimary,
+    colorDisabled: text.muted,
+    backgroundColor: grayFloor,
+    fontSize: 15,
+    borderWidth,
+    borderColor,
+    marginLeftText: 10,
+    paddingBody: 12,
+    paddingVerticalButton: 10,
+    paddingHorizontalButton: 20,
+};
