@@ -102,6 +102,9 @@ export const list = {
     paddingHorizontal: spacerHorizontal,
     backgroundColor: grayFloor,
     backgroundColorActive: '#ebebeb',
+    fontSizeTitle: fontSizeSm,
+    fontWeightTitle: 'bold',
+    paddingVerticalTitle: spacerVerticalLg,
 };
 
 // Media

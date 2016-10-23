@@ -1,11 +1,20 @@
 import { list as style } from '../variables';
 
 export const list = {
-    borderTopWidth: style.borderWidth,
-    borderColor: style.borderColor,
-    marginBottom: style.marginBottom,
+    // marginBottom: style.marginBottom,
 };
 
+export const listTitle = {
+    fontSize: style.fontSizeTitle,
+    fontWeight: style.fontWeightTitle,
+    paddingVertical: style.paddingVerticalTitle,
+    paddingHorizontal: style.paddingHorizontal,
+};
+
+export const firstItem = {
+    borderTopWidth: style.borderWidth,
+    borderColor: style.borderColor,
+};
 
 export const listItem = {
     borderBottomWidth: style.borderWidth,

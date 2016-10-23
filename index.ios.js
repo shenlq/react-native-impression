@@ -4,88 +4,70 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import {
+    AppRegistry,
+    StyleSheet,
     Text,
     View,
-    StyleSheet,
-    AppRegistry,
+    Image,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import TabNavigator from 'react-native-tab-navigator';
-import { StatusBar, SegmentedControl, Tabs } from './src/scripts/index';
+import { List, Media } from './src/scripts/index';
 
 const styles = StyleSheet.create({
-    header: {
-        height: 44,
-        backgroundColor: '#369',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    tabs: {
+    container: {
+        backgroundColor: '#f1f2f3',
         flex: 1,
+        marginTop: 30,
     },
-    tabSelectedstyle: {
-
+    list: {
+        marginTop: 0,
     },
-    titleStyle: {
+    media: {
+        marginBottom: 20,
     },
-    titleSelected: {
-    }
+    text: {
+        color: '#333',
+    },
 });
 
-class robot extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            show: false,
-            selectedTab: 'home',
-        };
-    }
-    changeTab = (selectedTab) => {
-        this.setState({
-            selectedTab,
-        });
-    }
-    render() {
-        let { selectedTab } = this.state;
-
-        return (
-            <View style={{flex: 1}}>
-                <Tabs tabBarStyle={styles.tabs}>
-                    <Tabs.Item
-                        tabStyle={selectedTab !== 'home' && styles.tabSelectedstyle}
-                        titleStyle={[styles.titleStyle]}
-                        selectedTitleStyle={[styles.titleSelected]}
-                        selected={selectedTab === 'home'}
-                        title={'HOME'}
-                        renderIcon={() => <Icon name='ios-home-outline' size={26} />}
-                        renderSelectedIcon={() => <Icon name='ios-home' size={26} />}
-                        onPress={() => this.changeTab('home')}>
-                        <View>
-                            <Text>Home</Text>
-                        </View>
-                    </Tabs.Item>
-                    <Tabs.Item
-                        tabStyle={selectedTab !== 'about' && styles.tabSelectedstyle}
-                        titleStyle={[styles.titleStyle]}
-                        selectedTitleStyle={[styles.titleSelected]}
-                        selected={selectedTab === 'about'}
-                        title={'ABOUT'}
-                        renderIcon={() => <Icon name='ios-ribbon-outline' size={26} />}
-                        renderSelectedIcon={() => <Icon name='ios-ribbon' size={26} />}
-                        onPress={() => this.changeTab('about')}>
-                        <View>
-                            <Text>About</Text>
-                        </View>
-                    </Tabs.Item>
-                </Tabs>
-            </View>
-        );
-    }
-}
+const robot = () => {
+    return (
+        <View style={styles.container}>
+            <Media style={[styles.media, { marginBottom: 0 }]}>
+                <Media.Object>
+                    <Image style={{ width: 60, height: 60 }} source={require('./images/avatar.jpg')} />
+                </Media.Object>
+                <Media.Body>
+                    <Media.Header>沈林强</Media.Header>
+                    <Text>shenlinqiang@imdada.cn</Text>
+                </Media.Body>
+            </Media>
+            <List style={styles.list} title="个人">
+                <List.Item>
+                    <Text style={styles.text}>相册</Text>
+                </List.Item>
+                <List.Item onPress={() => console.log(0)}>
+                    <Text style={styles.text}>收藏</Text>
+                </List.Item>
+                <List.Item>
+                    <Text style={styles.text}>钱包</Text>
+                </List.Item>
+            </List>
+            <List style={styles.list} title="其他">
+                <List.Item>
+                    <Text style={styles.text}>相册</Text>
+                </List.Item>
+                <List.Item onPress={() => console.log(0)}>
+                    <Text style={styles.text}>收藏</Text>
+                </List.Item>
+                <List.Item>
+                    <Text style={styles.text}>钱包</Text>
+                </List.Item>
+            </List>
+        </View>
+    );
+};
 
 
 AppRegistry.registerComponent('robot', () => robot);
