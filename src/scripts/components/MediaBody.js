@@ -2,12 +2,24 @@ import React, { PropTypes } from 'react';
 import {
     View,
 } from 'react-native';
-import { mediaBody } from '../../styles/modules/media';
+import {
+    mediaBody,
+    mediaBodySpacerLeft,
+    mediaBodySpacerRight,
+} from '../../styles/modules/media';
 
 // MediaBody
-const MediaBody = ({ style, children, ...others }) => {
+const MediaBody = ({ isFirst, isLast, style, children, ...others }) => {
+    let bodyStyle = [mediaBody];
+
+    !isFirst && bodyStyle.push(mediaBodySpacerLeft);
+    !isLast && bodyStyle.push(mediaBodySpacerRight);
+
+    bodyStyle.push(style);
+
+
     return (
-        <View {...others} style={[mediaBody, style]}>
+        <View {...others} style={bodyStyle}>
             {children}
         </View>
     );
@@ -16,6 +28,8 @@ const MediaBody = ({ style, children, ...others }) => {
 MediaBody.propTypes = {
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     children: PropTypes.node,
+    isFirst: PropTypes.bool,
+    isLast: PropTypes.bool,
 };
 
 export default MediaBody;

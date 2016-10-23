@@ -13,6 +13,14 @@ import MediaHeader from './MediaHeader';
 const Media = ({ bordered = true, touchable = false, style, children, ...others }) => {
     let { backgroundColorActive, ...mediaStyle } = media;
 
+    children = React.Children.map(children, (child, index) => {
+        return React.cloneElement(child, {
+            key: index,
+            isFirst: index === 0,
+            isLast: index === React.Children.count(children) - 1,
+        });
+    });
+
     if(touchable) {
         return (
             <TouchableHighlight

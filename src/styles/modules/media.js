@@ -12,12 +12,20 @@ export const media = {
 
 
 export const mediaObject = {
-    paddingRight: style.paddingHorizontal,
 };
 
 export const mediaBody = {
     flex: 1,
 };
+
+export const mediaBodySpacerLeft = {
+    paddingLeft: style.paddingHorizontal,
+};
+
+export const mediaBodySpacerRight = {
+    paddingRight: style.paddingHorizontal,
+};
+
 
 export const mediaHeader = {
     color: style.color,
