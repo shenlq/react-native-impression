@@ -19,6 +19,12 @@ export const offsetRight = {
 
 export const noOffset = {
     margin: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    marginLeft: 0,
+    marginRight: 0,
+    marginVertical: 0,
+    marginHorizontal: 0,
 };
 
 // padding
@@ -40,4 +46,10 @@ export const paddingRight = {
 
 export const noPadding = {
     padding: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingVertical: 0,
+    paddingHorizontal: 0,
 };

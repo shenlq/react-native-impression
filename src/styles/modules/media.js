@@ -1,6 +1,7 @@
 import { media as style } from '../variables';
 
 export const media = {
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: style.backgroundColor,
