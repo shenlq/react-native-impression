@@ -53,6 +53,15 @@ export default class DatePicker extends Component {
             date,
         });
     }
+    componentWillReceiveProps(nextProps) {
+        let { date } = this.props;
+
+        if(nextProps.date !== date) {
+            this.setState({
+                date: nextProps.date,
+            });
+        }
+    }
     render() {
         let { onPress, mode, visible, buttonOk, buttonCancel, animationType, ...others } = this.props,
             { date } = this.state;
