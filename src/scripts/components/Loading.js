@@ -66,7 +66,17 @@ Loading.show = () => {
 };
 
 // hide
-Loading.hide = () => {
+Loading.hide = duration => {
+    if (duration) {
+        setTimeout(() => {
+            LOADING && LOADING.setState({
+                visible: false,
+            });
+        }, duration);
+
+        return;
+    }
+
     LOADING && LOADING.setState({
         visible: false,
     });
