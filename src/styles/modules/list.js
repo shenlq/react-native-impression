@@ -5,6 +5,7 @@ export const list = {
 };
 
 export const listTitle = {
+    color: style.colorTitle,
     fontSize: style.fontSizeTitle,
     fontWeight: style.fontWeightTitle,
     paddingVertical: style.paddingVerticalTitle,

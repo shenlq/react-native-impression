@@ -102,6 +102,7 @@ export const list = {
     paddingHorizontal: spacerHorizontalLg,
     backgroundColor: grayFloor,
     backgroundColorActive: '#ebebeb',
+    colorTitle: text.default,
     fontSizeTitle: fontSize,
     fontWeightTitle: 'bold',
     paddingVerticalTitle: spacerVerticalLg,
