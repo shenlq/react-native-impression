@@ -38,7 +38,7 @@ export const spacerHorizontalLg = 16;
 // text
 export const text = {
     default: grayDark,
-    muted: grayLight,
+    muted: gray,
     holder: '#fff3',
 };
 
