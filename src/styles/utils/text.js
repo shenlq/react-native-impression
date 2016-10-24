@@ -27,26 +27,71 @@ export const textHolder = {
 
 // == font size
 export const textLg = {
+    color: variables.text.default,
     fontSize: variables.fontSizeLg,
 };
 
 export const textSm = {
+    color: variables.text.default,
     fontSize: variables.fontSizeSm,
 };
 
 export const textBold = {
     fontWeight: 'bold',
+    color: variables.text.default,
 };
 
 // == text align
 export const textLeft = {
     textAlign: 'left',
+    color: variables.text.default,
 };
 
 export const textCenter = {
     textAlign: 'center',
+    color: variables.text.default,
 };
+
 
 export const textRight = {
     textAlign: 'right',
+    color: variables.text.default,
 };
+
+// == Headings
+export const h1 = {
+    fontSize: variables.h1,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+
+export const h2 = {
+    fontSize: variables.h2,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+
+export const h3 = {
+    fontSize: variables.h3,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+
+export const h4 = {
+    fontSize: variables.h4,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+
+export const h5 = {
+    fontSize: variables.h5,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+
+export const h6 = {
+    fontSize: variables.h6,
+    fontWeight: 'bold',
+    color: variables.text.default,
+};
+

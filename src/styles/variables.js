@@ -19,6 +19,15 @@ export const fontSize = 14;
 export const fontSizeSm = 12;
 export const fontSizeLg = 18;
 
+// Headings
+export const h1 = 36;
+export const h2 = 30;
+export const h3 = 24;
+export const h4 = 16;
+export const h5 = 14;
+export const h6 = 12;
+
+// Border Radius
 export const borderRadius = 4;
 export const borderRadiusSm = 2;
 export const borderRadiusLg = 8;
