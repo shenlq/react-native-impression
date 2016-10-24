@@ -10,7 +10,7 @@ import { flex } from '../../styles/utils/flex';
 import { listItem, listArrow } from '../../styles/modules/list';
 
 // ListItem
-const ListItem = ({ onPress, style, children, ...others }) => {
+const ListItem = ({ onPress, hasIcon = true, style, children, ...others }) => {
     let Component = View,
         { backgroundColorActive, ...itemStyle } = listItem;
 
@@ -29,7 +29,7 @@ const ListItem = ({ onPress, style, children, ...others }) => {
                     <View style={flex}>
                         {children}
                     </View>
-                    { onPress &&
+                    { hasIcon && onPress &&
                         <Icon name="angle-right" size={listArrow.size} color={listArrow.color} />
                     }
                 </View>
@@ -42,6 +42,7 @@ ListItem.propTypes = {
     onPress: PropTypes.func,
     style: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.array]),
     children: PropTypes.node,
+    hasIcon: PropTypes.bool,
 };
 
 export default ListItem;
