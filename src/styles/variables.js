@@ -6,7 +6,7 @@ import { getPixel } from './mixins/pixel';
 export const brandPrimary = '#369';
 export const brandSecondary = '#399';
 export const brandWarning = '#FC3';
-export const brandDanger = '#C33';
+export const brandDanger = '#933';
 
 export const grayDark = '#333';
 export const gray = '#666';
