@@ -19,13 +19,6 @@ export const fontSize = 14;
 export const fontSizeSm = 12;
 export const fontSizeLg = 18;
 
-// Headings
-export const h1 = 36;
-export const h2 = 30;
-export const h3 = 24;
-export const h4 = 16;
-export const h5 = 14;
-export const h6 = 12;
 
 // Border Radius
 export const borderRadius = 4;
@@ -43,6 +36,22 @@ export const spacerVerticalLg = 16;
 export const spacerHorizontal = 10;
 export const spacerHorizontalSm = 8;
 export const spacerHorizontalLg = 16;
+
+// Headings
+export const heading = {
+    h1: 36,
+    h2: 30,
+    h3: 24,
+    h4: 16,
+    h5: 14,
+    h6: 12,
+    h1SpacerVertical: spacerVertical,
+    h2SpacerVertical: spacerVertical,
+    h3SpacerVertical: spacerVertical,
+    h4SpacerVertical: spacerVertical,
+    h5SpacerVertical: spacerVertical,
+    h6SpacerVertical: spacerVertical,
+};
 
 // text
 export const text = {

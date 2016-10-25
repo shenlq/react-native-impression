@@ -15,5 +15,11 @@ export const SegmentedControl = components.SegmentedControl;
 export const Tabs = components.Tabs;
 export const DatePickerIOS = components.DatePickerIOS;
 export const DateBar = components.DateBar;
+export const H1 = components.H1;
+export const H2 = components.H2;
+export const H3 = components.H3;
+export const H4 = components.H4;
+export const H5 = components.H5;
+export const H6 = components.H6;
 
 export default styles;

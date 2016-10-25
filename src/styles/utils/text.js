@@ -60,37 +60,37 @@ export const textRight = {
 
 // == Headings
 export const h1 = {
-    fontSize: variables.h1,
+    fontSize: variables.heading.h1,
     fontWeight: 'bold',
     color: variables.text.default,
 };
 
 export const h2 = {
-    fontSize: variables.h2,
+    fontSize: variables.heading.h2,
     fontWeight: 'bold',
     color: variables.text.default,
 };
 
 export const h3 = {
-    fontSize: variables.h3,
+    fontSize: variables.heading.h3,
     fontWeight: 'bold',
     color: variables.text.default,
 };
 
 export const h4 = {
-    fontSize: variables.h4,
+    fontSize: variables.heading.h4,
     fontWeight: 'bold',
     color: variables.text.default,
 };
 
 export const h5 = {
-    fontSize: variables.h5,
+    fontSize: variables.heading.h5,
     fontWeight: 'bold',
     color: variables.text.default,
 };
 
 export const h6 = {
-    fontSize: variables.h6,
+    fontSize: variables.heading.h6,
     fontWeight: 'bold',
     color: variables.text.default,
 };
