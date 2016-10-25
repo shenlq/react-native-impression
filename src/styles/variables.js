@@ -39,9 +39,9 @@ export const spacerHorizontalLg = 16;
 
 // Headings
 export const heading = {
-    h1: 36,
-    h2: 30,
-    h3: 24,
+    h1: 30,
+    h2: 24,
+    h3: 20,
     h4: 16,
     h5: 14,
     h6: 12,
