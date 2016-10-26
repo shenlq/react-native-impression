@@ -5,8 +5,16 @@ export const offsetTop = {
     marginTop: variables.spacerVertical,
 };
 
+export const offsetTopLg = {
+    marginTop: variables.spacerVertical * 2,
+};
+
 export const offsetBottom = {
     marginBottom: variables.spacerVertical,
+};
+
+export const offsetBottomLg = {
+    marginBottom: variables.spacerVertical * 2,
 };
 
 export const offsetLeft = {
@@ -32,8 +40,16 @@ export const paddingTop = {
     paddingTop: variables.spacerVertical,
 };
 
+export const paddingTopLg = {
+    paddingTop: variables.spacerVertical * 2,
+};
+
 export const paddingBottom = {
     paddingBottom: variables.spacerVertical,
+};
+
+export const paddingBottomLg = {
+    paddingBottom: variables.spacerVertical * 2,
 };
 
 export const paddingLeft = {
@@ -52,4 +68,32 @@ export const noPadding = {
     paddingRight: 0,
     paddingVertical: 0,
     paddingHorizontal: 0,
+};
+
+export const noPaddingVertical = {
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingVertical: 0,
+};
+
+export const noPaddingHorizontal = {
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingHorizontal: 0,
+};
+
+export const noPaddingTop = {
+    paddingTop: 0,
+};
+
+export const noPaddingBottom = {
+    paddingBottom: 0,
+};
+
+export const noPaddingLeft = {
+    paddingLeft: 0,
+};
+
+export const noPaddingRight = {
+    paddingRight: 0,
 };
