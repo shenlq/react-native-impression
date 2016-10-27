@@ -23,9 +23,8 @@ const ListItem = ({ onPress, hasIcon = true, style, children, ...others }) => {
         <Component
             {...others}
             onPress={onPress}
-            style={[itemStyle, style]}
             underlayColor={backgroundColorActive}>
-            <View style={flex}>
+            <View style={[itemStyle, flex, style]}>
                 <View style={flex}>
                     {children}
                 </View>
