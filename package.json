@@ -1,6 +1,6 @@
 {
   "name": "react-native-impression",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "main": "./lib.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
