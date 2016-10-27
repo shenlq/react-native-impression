@@ -3,18 +3,8 @@ import * as flex from './utils/flex';
 import * as spacer from './utils/spacer';
 import * as text from './utils/text';
 import * as shadow from './utils/shadow';
+import * as border from './utils/border';
 
-// == border
-export const bordered = {
-    borderWidth: variables.borderWidth,
-    borderColor: variables.borderColor,
-};
-
-export const borderVerticaled = {
-    borderTopWidth: variables.borderWidth,
-    borderBottomWidth: variables.borderWidth,
-    borderColor: variables.borderColor,
-};
 
 export default {
     ...variables,
@@ -22,5 +12,5 @@ export default {
     ...spacer,
     ...text,
     ...shadow,
-    ...bordered,
+    ...border,
 };
