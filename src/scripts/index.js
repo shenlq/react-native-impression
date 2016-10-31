@@ -18,6 +18,7 @@ import h3 from './components/H3';
 import h4 from './components/H4';
 import h5 from './components/H5';
 import h6 from './components/H6';
+import loadingView from './components/LoadingView';
 
 export const Button = button;
 export const List = list;
@@ -38,4 +39,4 @@ export const H2 = h2;
 export const H3 = h3;
 export const H4 = h4;
 export const H5 = h5;
-export const H6 = h6;
+export const LoadingView = loadingView;

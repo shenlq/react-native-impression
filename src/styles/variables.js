@@ -234,3 +234,10 @@ export const dateBar = {
     paddingVerticalButton: 10,
     paddingHorizontalButton: 20,
 };
+
+// LoadingView
+export const loadingView = {
+    color: text.muted,
+    paddingVertical: 30,
+    paddingTopText: 20,
+};

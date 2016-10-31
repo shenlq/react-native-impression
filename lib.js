@@ -21,5 +21,6 @@ export const H3 = components.H3;
 export const H4 = components.H4;
 export const H5 = components.H5;
 export const H6 = components.H6;
+export const LoadingView = components.LoadingView;
 
 export default styles;
