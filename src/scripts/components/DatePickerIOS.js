@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import {
-    Modal,
     View,
     Text,
     TouchableHighlight,
@@ -20,9 +19,6 @@ export default class DatePicker extends Component {
     static propTypes = {
         mode: PropTypes.string,
         date: PropTypes.instanceOf(Date),
-        visible: PropTypes.bool,
-        animationType: PropTypes.string,
-        onRequestClose: PropTypes.func,
         onPress: PropTypes.func,
         buttonOk: PropTypes.string,
         buttonCancel: PropTypes.string,
@@ -41,12 +37,6 @@ export default class DatePicker extends Component {
             date: props.date || new Date(),
         };
     }
-    // fix
-    onRequestCloseHandle = () => {
-        let { onRequestClose } = this.props;
-
-        onRequestClose && onRequestClose();
-    }
     // 选择时间
     onDateChangeHandle = date => {
         this.setState({
@@ -63,48 +53,41 @@ export default class DatePicker extends Component {
         }
     }
     render() {
-        let { onPress, mode, visible, buttonOk, buttonCancel, animationType, ...others } = this.props,
+        let { onPress, mode, buttonOk, buttonCancel, ...others } = this.props,
             { date } = this.state;
 
         return (
-            <Modal
-                transparent
-                animationType={animationType}
-                onRequestClose={this.onRequestCloseHandle}
-                visible={visible}>
-                <View style={datePickerMask}>
-                    <TouchableHighlight
-                        underlayColor="transparent"
-                        style={flexItem}
-                        onPress={() => onPress(false, date)}>
-                        <View style={flexItem} />
-                    </TouchableHighlight>
-                    <View style={datePicker}>
-                        <View style={datePickerHeader}>
-                            <TouchableHighlight underlayColor="transparent" onPress={() => onPress(false, date)}>
-                                <View>
-                                    <Text style={[datePickerButton, textMuted]}>
-                                        {buttonCancel}
-                                    </Text>
-                                </View>
-                            </TouchableHighlight>
-                            <TouchableHighlight underlayColor="transparent" onPress={() => onPress(true, date)}>
-                                <View>
-                                    <Text style={datePickerButton}>
-                                        {buttonOk}
-                                    </Text>
-                                </View>
-                            </TouchableHighlight>
-                        </View>
-                        <DatePickerIOS
-                            {...others}
-                            onDateChange={this.onDateChangeHandle}
-                            date={date}
-                            mode={mode}
-                        />
+            <View style={datePickerMask}>
+                <TouchableHighlight
+                    underlayColor="transparent"
+                    style={flexItem}
+                    onPress={() => onPress(false, date)}>
+                    <View style={flexItem} />
+                </TouchableHighlight>
+                <View style={datePicker}>
+                    <View style={datePickerHeader}>
+                        <TouchableHighlight underlayColor="transparent" onPress={() => onPress(false, date)}>
+                            <View>
+                                <Text style={[datePickerButton, textMuted]}>
+                                    {buttonCancel}
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
+                        <TouchableHighlight underlayColor="transparent" onPress={() => onPress(true, date)}>
+                            <View>
+                                <Text style={datePickerButton}>
+                                    {buttonOk}
+                                </Text>
+                            </View>
+                        </TouchableHighlight>
                     </View>
+                    <DatePickerIOS
+                        {...others}
+                        onDateChange={this.onDateChangeHandle}
+                        date={date}
+                        mode={mode} />
                 </View>
-            </Modal>
+            </View>
         );
     }
 }
