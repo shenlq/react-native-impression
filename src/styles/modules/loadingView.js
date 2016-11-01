@@ -6,6 +6,8 @@ export const container = {
 };
 
 export const text = {
-    color: style.color,
+    color: style.colorText,
     paddingTop: style.paddingTopText,
 };
+
+export const indicatorColor = style.color;

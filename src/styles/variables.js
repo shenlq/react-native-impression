@@ -1,3 +1,4 @@
+import { Platform } from 'react-native';
 import { darken } from './mixins/color';
 import { getPixel } from './mixins/pixel';
 
@@ -237,7 +238,11 @@ export const dateBar = {
 
 // LoadingView
 export const loadingView = {
-    color: text.muted,
+    color: Platform.select({
+        ios: 'gray',
+        android: brandPrimary,
+    }),
+    colorText: text.muted,
     paddingVertical: 30,
     paddingTopText: 20,
 };
