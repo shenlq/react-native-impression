@@ -41,7 +41,6 @@ export const confirmFooterFlex = {
 };
 
 export const confirmButton = {
-    flex: 1,
     alignItems: 'center',
     buttonFontSize: style.buttonFontSize,
     colorPrimary: style.buttonColorPrimary,
