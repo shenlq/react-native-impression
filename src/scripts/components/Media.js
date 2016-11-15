@@ -4,7 +4,7 @@ import {
     TouchableHighlight,
 } from 'react-native';
 import { media } from '../../styles/modules/media';
-import { borderVerticaled } from '../../styles/utils';
+import styles from '../../styles/utils';
 import MediaObject from './MediaObject';
 import MediaBody from './MediaBody';
 import MediaHeader from './MediaHeader';
@@ -27,7 +27,7 @@ const Media = ({ bordered = true, touchable = false, style, children, ...others 
                 {...others}
                 activeOpacity={1}
                 underlayColor={backgroundColorActive}>
-                <View style={[mediaStyle, bordered ? borderVerticaled : null, style]}>
+                <View style={[mediaStyle, bordered ? styles.borderVertical : null, style]}>
                     {children}
                 </View>
             </TouchableHighlight>
@@ -35,7 +35,7 @@ const Media = ({ bordered = true, touchable = false, style, children, ...others 
     }
 
     return (
-        <View {...others} style={[mediaStyle, bordered ? borderVerticaled : null, style]}>
+        <View {...others} style={[mediaStyle, bordered ? styles.borderVertical : null, style]}>
             {children}
         </View>
     );
