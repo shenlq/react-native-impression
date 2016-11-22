@@ -1,0 +1,47 @@
+import { heading, text } from '../variables';
+
+export const h1 = {
+    fontSize: heading.h1,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h1SpacerVertical,
+};
+
+export const h2 = {
+    fontSize: heading.h2,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h2SpacerVertical,
+
+};
+
+
+export const h3 = {
+    fontSize: heading.h3,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h3SpacerVertical,
+
+};
+
+export const h4 = {
+    fontSize: heading.h4,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h4SpacerVertical,
+
+};
+
+export const h5 = {
+    fontSize: heading.h5,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h5SpacerVertical,
+};
+
+export const h6 = {
+    fontSize: heading.h6,
+    fontWeight: 'bold',
+    color: text.default,
+    paddingVertical: heading.h6SpacerVertical,
+};

@@ -1,0 +1,33 @@
+{
+  "name": "robot",
+  "version": "0.2.1",
+  "main": "./lib.js",
+  "scripts": {
+    "start": "react-native run-ios",
+    "eslint": "eslint src/scripts",
+    "ios": "react-native run-ios"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "moment": "*",
+    "react-native-vector-icons": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-config-impression": "^1.0.5",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-flow-vars": "^0.3.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-native": "^0.37.0",
+    "react-native-tab-navigator": "^0.3.3",
+    "react-native-vector-icons": "^3.0.0"
+  }
+}
