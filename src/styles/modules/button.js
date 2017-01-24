@@ -1,8 +1,10 @@
-import { button as style } from '../variables';
+import { spacerHorizontalSm, button as style } from '../variables';
 import shadow from '../mixins/shadow';
 
 // 按钮
 const btn = {
+    flexDirection: 'row',
+    justifyContent: 'center',
     paddingVertical: style.paddingVertical,
     paddingHorizontal: style.paddingHorizontal,
     borderWidth: style.borderWidth,
@@ -48,6 +50,11 @@ const text = {
     color: style.color,
     textAlign: 'center',
     fontSize: style.fontSize,
+};
+
+// Indicator
+const indicator = {
+    marginLeft: spacerHorizontalSm,
 };
 
 
@@ -121,5 +128,6 @@ export const getButtonStyle = (theme = 'primary', size = 'default', isOutline = 
         button: mergeButton,
         activeButtonBg: activeButtonBgColor,
         text: mergeText,
+        indicator,
     };
 };
