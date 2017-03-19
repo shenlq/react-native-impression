@@ -1,6 +1,6 @@
 {
   "name": "robot",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "main": "./lib.js",
   "scripts": {
     "start": "react-native run-ios",

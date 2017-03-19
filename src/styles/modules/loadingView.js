@@ -1,7 +1,9 @@
 import { loadingView as style } from '../variables';
 
 export const container = {
+    flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     paddingVertical: style.paddingVertical,
 };
 
