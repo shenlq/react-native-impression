@@ -14,7 +14,7 @@ import {
     buttonBgAcitive,
     colorDisabled,
 } from '../../styles/modules/dateBar';
-import { flex } from '../../styles/utils/flex';
+import { flexItem } from '../../styles/utils/flex';
 
 
 export default class DateBar extends Component {
@@ -59,7 +59,7 @@ export default class DateBar extends Component {
         return (
             <View
                 style={dateBar}>
-                <TouchableHighlight underlayColor={buttonBgAcitive} style={flex} onPress={onPress}>
+                <TouchableHighlight underlayColor={buttonBgAcitive} style={flexItem} onPress={onPress}>
                     <View style={dateBarBody}>
                         <Icon name="ios-calendar" size={22} color={dateBarText.color} />
                         <Text style={dateBarText}>

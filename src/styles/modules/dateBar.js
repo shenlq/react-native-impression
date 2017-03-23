@@ -10,7 +10,6 @@ export const dateBar = {
 };
 
 export const dateBarBody = {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     padding: style.paddingBody,

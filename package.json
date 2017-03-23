@@ -1,17 +1,21 @@
 {
-  "name": "robot",
-  "version": "0.2.3",
+  "name": "react-native-impression",
+  "version": "0.3.1",
   "main": "./lib.js",
   "scripts": {
     "start": "react-native run-ios",
     "eslint": "eslint src/scripts",
-    "ios": "react-native run-ios"
+    "ios": "react-native run-ios",
+    "prepublish": "npm config set registry http://registry.npmjs.org",
+    "postpublish": "npm config set registry https://registry.npm.taobao.org/"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
     "moment": "*",
-    "react-native-vector-icons": "*"
+    "react-native-vector-icons": "*",
+    "react-native-tab-navigator": "*"
+
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
@@ -23,11 +27,5 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-jsx-a11y": "^2.2.1",
     "eslint-plugin-react": "^6.2.0"
-  },
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-native": "^0.37.0",
-    "react-native-tab-navigator": "^0.3.3",
-    "react-native-vector-icons": "^3.0.0"
   }
 }
